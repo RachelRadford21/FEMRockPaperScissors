@@ -11,6 +11,7 @@ import SwiftUI
 
 struct MainView: View {
     @StateObject var vm = ViewModel()
+    @StateObject var viewRouter = ViewRouter()
      var imageName = ""
     var body: some View {
         ZStack {
@@ -62,5 +63,6 @@ struct MainView_Previews: PreviewProvider {
         MainView()
             .previewInterfaceOrientation(.portrait)
             .environmentObject(ViewModel())
+            .environmentObject(ViewRouter())
     }
 }

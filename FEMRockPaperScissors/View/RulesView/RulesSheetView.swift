@@ -11,6 +11,7 @@ struct RulesSheetView: View {
     var body: some View {
         ZStack {
             Color.background2.ignoresSafeArea()
+            ScrollView{
             Text("""
                     RULES:
                 
@@ -29,6 +30,7 @@ struct RulesSheetView: View {
                 """)
             .foregroundColor(Color.white)
             .font(.custom("barlow", size: 25))
+            }
         }
        
     }

@@ -7,12 +7,6 @@
 
 import SwiftUI
 
-//enum Choices: String, CaseIterable, Hashable {
-//    case rock = "icon-rock"
-//    case paper = "icon-paper"
-//    case scissors = "icon-scissors"
-//}
-//
 struct ThreeCirclesView: View {
     @EnvironmentObject var vm: ViewModel
     var body: some View {
@@ -26,12 +20,9 @@ struct ThreeCirclesView: View {
             VStack {
                 CircleView(color1: Color.rock1, color2: Color.rock2, imageName: "icon-rock")
             }
-        }
-        .sheet(isPresented: $vm.isPresented2) {
+        }.sheet(isPresented: $vm.isPresented2){
             CircleSheetView()
         }
-        
-        
     }
 }
 
@@ -39,5 +30,6 @@ struct ThreeCirclesView_Previews: PreviewProvider {
     static var previews: some View {
         ThreeCirclesView()
             .environmentObject(ViewModel())
+         
     }
 }

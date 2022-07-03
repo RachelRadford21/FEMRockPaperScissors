@@ -8,10 +8,10 @@
 import SwiftUI
 
 struct YouPickedView: View {
-   /// @EnvironmentObject var vm: ViewModel
+   
     var body: some View {
         Text("YOU PICKED")
-            .foregroundColor(Color.background1)
+            .foregroundColor(Color.white)
             .font(.custom("barlow", size: 20))
             .padding(.top, 200)
             .padding(.leading, -170)
@@ -22,6 +22,6 @@ struct YouPickedView: View {
 struct YouPickedView_Previews: PreviewProvider {
     static var previews: some View {
         YouPickedView()
-        //    .environmentObject(ViewModel())
+        
     }
 }

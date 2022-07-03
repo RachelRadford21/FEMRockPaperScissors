@@ -10,18 +10,18 @@ import SwiftUI
 struct RPSTitleView: View {
     var body: some View {
         HStack {
-            VStack(alignment: .leading, spacing: -8) {
+            VStack(alignment: .leading, spacing: -11) {
                 Text("ROCK")
-                    .font(.custom("barlowBold", size: 20))
+                    .font(.custom("BarlowSemiCondensed-Bold", size: 25))
                     .foregroundColor(Color.white.opacity(0.9))
                     .frame(alignment: .leading)
                     
                 Text("PAPER")
-                    .font(.custom("barlowBold", size: 20))
+                    .font(.custom("BarlowSemiCondensed-Bold", size: 25))
                     .foregroundColor(Color.white.opacity(0.9))
                     .frame(alignment: .leading)
                 Text("SCISSORS")
-                    .font(.custom("barlowBold", size: 20))
+                    .font(.custom("BarlowSemiCondensed-Bold", size: 25))
                     .foregroundColor(Color.white.opacity(0.9))
                     .frame(alignment: .leading)
             }

@@ -8,13 +8,13 @@
 import SwiftUI
 
 struct ScoreView: View {
-    @EnvironmentObject var vm: ViewModel
+    @StateObject var vm = ViewModel()
     var body: some View {
         ZStack{
         
             VStack {
                 RoundedRectangle(cornerRadius: 10)
-                    .stroke(Color.white.opacity(0.5), lineWidth: 2)
+                    .stroke(Color.headerOutline.opacity(0.5), lineWidth: 4)
                     .frame(width: 365, height: 120, alignment: .top)
                     .overlay(
                         RPSTitleView()

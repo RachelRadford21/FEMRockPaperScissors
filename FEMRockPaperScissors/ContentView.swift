@@ -27,6 +27,7 @@ struct ContentView: View {
         switch viewRouter.currentPage {
         case .page1:
             MainView()
+        
         }
       
         

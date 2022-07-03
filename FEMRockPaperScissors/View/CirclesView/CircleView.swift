@@ -25,19 +25,19 @@ var body: some View {
                     Button{
                         vm.userChoice = imageName
                         vm.makeChoice()
-                        vm.choicesMade.toggle()
-                        vm.getScore()
-                        vm.isPresented2.toggle()
+                       // vm.getScore()
+                        vm.isPresented2 = true
+                        vm.loseScore()
+                        vm.winScore()
+                        vm.tieScore()
                     } label: {
                         Image("\(imageName)")
                        
                     }
                     .animation(.spring(), value: 9)
-                    
                 )
                 .background(Color.white)
                 .cornerRadius(80)
-    
                 .overlay(
                     Circle()
                         .strokeBorder(RadialGradient(gradient: Gradient(colors: [color2, color2]), center: .top, startRadius: .zero, endRadius: 180), lineWidth: 0)
@@ -45,13 +45,9 @@ var body: some View {
                 )
                 .shadow(color: color2, radius: 0, x: 1, y: 1)
                 .shadow(color: color1, radius: 0, x: 2, y: 3)
-                .opacity(vm.choicesMade && vm.userChoice != imageName && vm.computerChoice != imageName ? 0.0 : 1.0)
     }
 }
     
-    
-
- 
 struct CircleView_Previews: PreviewProvider {
     static var previews: some View {
         CircleView(color1: Color.rock1, color2: Color.rock2, imageName: "")

@@ -10,7 +10,7 @@ import SwiftUI
 struct HousePickedView: View {
     var body: some View {
         Text("HOUSE PICKED")
-            .foregroundColor(Color.background1)
+            .foregroundColor(Color.white)
             .font(.custom("barlow", size: 20))
             .padding(.top, 200)
             .padding(.leading, -170)

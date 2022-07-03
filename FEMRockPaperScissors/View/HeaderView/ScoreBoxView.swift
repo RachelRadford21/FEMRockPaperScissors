@@ -16,25 +16,24 @@ struct ScoreBoxView: View {
             .frame(width: 100, height: 100, alignment: .trailing)
             .overlay(
                 Text("SCORE")
-                    .foregroundColor(Color.paper1)
-                    .font(.custom("barlow", size: 15))
+                    .foregroundColor(Color.background1)
+                    .font(.custom("BarlowSemiCondensed-Bold", size: 15))
                     .padding(.top, -20)
                     .padding(.bottom, 10)
                 
             )
             .padding(.bottom, 2)
-           
             .padding(.trailing, -20)
             .overlay(
                
                 Text("\(vm.score)")
                     .foregroundColor(Color.background1)
-                    .font(.custom("barlowXBold", size: 45))
+                    .font(.custom("BarlowSemiCondensed-Bold", size: 45))
                     .padding(.top, 35)
-                    .padding(.leading, 15)
+                    .padding(.leading, 25)
                 
             )
-    }
+        }
     }
 
 

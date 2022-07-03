@@ -16,6 +16,10 @@
 		ABA2BFF22870E9AE00EEF0E1 /* CircleSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2BFF12870E9AE00EEF0E1 /* CircleSheetView.swift */; };
 		ABA2BFF42870EB5500EEF0E1 /* YouPickedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2BFF32870EB5500EEF0E1 /* YouPickedView.swift */; };
 		ABA2BFF62870EC5200EEF0E1 /* HousePickedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2BFF52870EC5200EEF0E1 /* HousePickedView.swift */; };
+		ABA2BFFC2870F41200EEF0E1 /* SheetButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2BFFB2870F41200EEF0E1 /* SheetButtonView.swift */; };
+		ABA2BFFE287222E700EEF0E1 /* YouWinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2BFFD287222E700EEF0E1 /* YouWinView.swift */; };
+		ABA2C0002872249300EEF0E1 /* CompWinsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2BFFF2872249300EEF0E1 /* CompWinsView.swift */; };
+		ABA2C0022872264F00EEF0E1 /* TieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA2C0012872264F00EEF0E1 /* TieView.swift */; };
 		ABC2C6AF2867687000BA5A79 /* FEMRockPaperScissorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC2C6AE2867687000BA5A79 /* FEMRockPaperScissorsApp.swift */; };
 		ABC2C6B12867687000BA5A79 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC2C6B02867687000BA5A79 /* ContentView.swift */; };
 		ABC2C6B32867687000BA5A79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABC2C6B22867687000BA5A79 /* Assets.xcassets */; };
@@ -43,6 +47,10 @@
 		ABA2BFF12870E9AE00EEF0E1 /* CircleSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleSheetView.swift; sourceTree = "<group>"; };
 		ABA2BFF32870EB5500EEF0E1 /* YouPickedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouPickedView.swift; sourceTree = "<group>"; };
 		ABA2BFF52870EC5200EEF0E1 /* HousePickedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousePickedView.swift; sourceTree = "<group>"; };
+		ABA2BFFB2870F41200EEF0E1 /* SheetButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetButtonView.swift; sourceTree = "<group>"; };
+		ABA2BFFD287222E700EEF0E1 /* YouWinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YouWinView.swift; sourceTree = "<group>"; };
+		ABA2BFFF2872249300EEF0E1 /* CompWinsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompWinsView.swift; sourceTree = "<group>"; };
+		ABA2C0012872264F00EEF0E1 /* TieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TieView.swift; sourceTree = "<group>"; };
 		ABC2C6AB2867687000BA5A79 /* FEMRockPaperScissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FEMRockPaperScissors.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC2C6AE2867687000BA5A79 /* FEMRockPaperScissorsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FEMRockPaperScissorsApp.swift; sourceTree = "<group>"; };
 		ABC2C6B02867687000BA5A79 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -86,7 +94,6 @@
 		ABA2BFF72870F24400EEF0E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AB81B1382867B6EA00ECD84B /* MainView.swift */,
 				ABA2BFF82870F26E00EEF0E1 /* HeaderView */,
 				ABA2BFF92870F29600EEF0E1 /* CirclesView */,
 				ABA2BFFA2870F2DA00EEF0E1 /* RulesView */,
@@ -108,10 +115,10 @@
 			isa = PBXGroup;
 			children = (
 				ABA2BFED2870D53300EEF0E1 /* ThreeCirclesView.swift */,
-				ABA2BFF12870E9AE00EEF0E1 /* CircleSheetView.swift */,
 				ABC2C6C82867752F00BA5A79 /* CircleView.swift */,
 				ABA2BFF32870EB5500EEF0E1 /* YouPickedView.swift */,
 				ABA2BFF52870EC5200EEF0E1 /* HousePickedView.swift */,
+				ABA2C003287228AA00EEF0E1 /* SheetPage */,
 			);
 			path = CirclesView;
 			sourceTree = "<group>";
@@ -123,6 +130,18 @@
 				AB4899D92867CF5400104367 /* RulesSheetView.swift */,
 			);
 			path = RulesView;
+			sourceTree = "<group>";
+		};
+		ABA2C003287228AA00EEF0E1 /* SheetPage */ = {
+			isa = PBXGroup;
+			children = (
+				ABA2BFF12870E9AE00EEF0E1 /* CircleSheetView.swift */,
+				ABA2BFFD287222E700EEF0E1 /* YouWinView.swift */,
+				ABA2BFFF2872249300EEF0E1 /* CompWinsView.swift */,
+				ABA2C0012872264F00EEF0E1 /* TieView.swift */,
+				ABA2BFFB2870F41200EEF0E1 /* SheetButtonView.swift */,
+			);
+			path = SheetPage;
 			sourceTree = "<group>";
 		};
 		ABC2C6A22867687000BA5A79 = {
@@ -147,14 +166,15 @@
 				ABC2C6C72867691B00BA5A79 /* Info.plist */,
 				ABC2C6AE2867687000BA5A79 /* FEMRockPaperScissorsApp.swift */,
 				ABC2C6B02867687000BA5A79 /* ContentView.swift */,
+				AB81B1382867B6EA00ECD84B /* MainView.swift */,
 				ABA2BFF72870F24400EEF0E1 /* View */,
 				ABC2C6B22867687000BA5A79 /* Assets.xcassets */,
 				AB81B13C2867B76700ECD84B /* Fonts */,
 				ABC2C6C6286768F200BA5A79 /* Images */,
 				ABC2C6B42867687000BA5A79 /* Preview Content */,
 				ABC2C6BC2867688300BA5A79 /* Extensions.swift */,
-				AB81B13A2867B74400ECD84B /* ViewRouter.swift */,
 				ABC8AD16286DE963003FC3B6 /* ViewModel.swift */,
+				AB81B13A2867B74400ECD84B /* ViewRouter.swift */,
 			);
 			path = FEMRockPaperScissors;
 			sourceTree = "<group>";
@@ -255,7 +275,10 @@
 			files = (
 				ABC8AD17286DE963003FC3B6 /* ViewModel.swift in Sources */,
 				ABC2C6CB2867A3EE00BA5A79 /* RulesButtonView.swift in Sources */,
+				ABA2C0002872249300EEF0E1 /* CompWinsView.swift in Sources */,
 				ABA2BFEA286F47AF00EEF0E1 /* RPSTitleView.swift in Sources */,
+				ABA2BFFE287222E700EEF0E1 /* YouWinView.swift in Sources */,
+				ABA2C0022872264F00EEF0E1 /* TieView.swift in Sources */,
 				AB4899DA2867CF5400104367 /* RulesSheetView.swift in Sources */,
 				AB81B1392867B6EA00ECD84B /* MainView.swift in Sources */,
 				ABC2C6C92867752F00BA5A79 /* CircleView.swift in Sources */,
@@ -265,6 +288,7 @@
 				ABA2BFF22870E9AE00EEF0E1 /* CircleSheetView.swift in Sources */,
 				ABA2BFF42870EB5500EEF0E1 /* YouPickedView.swift in Sources */,
 				ABA2BFEC286F480600EEF0E1 /* ScoreBoxView.swift in Sources */,
+				ABA2BFFC2870F41200EEF0E1 /* SheetButtonView.swift in Sources */,
 				ABC2C6AF2867687000BA5A79 /* FEMRockPaperScissorsApp.swift in Sources */,
 				ABC2C6CD2867A7D000BA5A79 /* ScoreView.swift in Sources */,
 				AB81B13B2867B74400ECD84B /* ViewRouter.swift in Sources */,

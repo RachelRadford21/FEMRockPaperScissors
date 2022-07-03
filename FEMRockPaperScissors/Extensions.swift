@@ -12,16 +12,7 @@ import SwiftUI
 ///     The first extension extends Color so we can create custom colors provided by FEM. The colors do not
 ///     translate perfectly, so I made adjustments to match as closely as possible.
 ///
-///     The Font extension extends font so we can use fonts suggested by FEM with custom names. For some reason,
-///     only the regular font works. I've never encountered issues with custom fonts before, so, I'm not sure
-///     why I'm encountering them now.
-///
-///     The CircleView extension extends CircleView. I like to add functions that belong to
-///     a view in an extension. I think it cleans up the view & leaves logic out of the view
-///     The makeChoice() function picks the computer choice by picking a random
-///     image from the choice array.
-///     The getScore() function tracks the score in the ScoreView by adding, subtracting or doing
-///     nothing based on if the user won that game or not.
+
 
 extension Color {
     /*
@@ -57,54 +48,7 @@ extension Color {
     static let rock2 = Color(#colorLiteral(red: 0.7720556973, green: 0.2424701165, blue: 0.3937513427, alpha: 1))
 }
 
-extension Font {
-    static var barlow: Font {
-        Font.custom("BarlowSemiCondensed-Regular", size: 0)
-    }
-    static var barlowBold: Font {
-        Font.custom("BarlowSemiCondensed-Bold", size: 0)
-    }
-    static var barlowXBold: Font {
-        Font.custom("BarlowSemiCondensed-ExtraBold", size: 0)
-    }
-}
 
-extension CircleView {
-    
-    func makeChoice() {
-          if imageName != "" {
-              vm.computerChoice = vm.choiceArray.randomElement() ?? "icon-scissors"
-             
-              print(vm.computerChoice)
-         }
-      }
-    
-    func getScore() {
-        if vm.userChoice != "" && vm.computerChoice != "" || vm.userChoice == vm.computerChoice {
-            vm.score = vm.score + 0
-            print("tie")
-        }
-        if vm.userChoice == "icon-rock" && vm.computerChoice == "icon-scissors" && vm.score != 12 {
-            vm.score = vm.score + 1
-        }else if vm.userChoice == "icon-paper" && vm.computerChoice == "icon-rock" && vm.score != 12 {
-            vm.score += 1
-        }else if vm.userChoice == "icon-scissors" && vm.computerChoice == "icon-paper" && vm.score != 12 {
-            vm.score += 1
-        }else if  vm.userChoice == "icon-scissors" && vm.computerChoice == "icon-rock" {
-            vm.score -= 1
-            print("You Lose")
-        }else if vm.userChoice == "icon-rock" && vm.computerChoice == "icon-paper" {
-            vm.score -= 1
-            print("You Lose")
-        } else if vm.userChoice == "icon-paper" && vm.computerChoice == "icon-scissors" {
-            vm.score -= 1
-            print("You Lose")
-        }else if vm.score == 0 {
-            print("Game Over")
-        }
-        
-    }
-    //    func winLose() {
-//        
-//    }
-}
+
+
+
