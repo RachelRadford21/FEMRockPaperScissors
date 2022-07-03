@@ -25,6 +25,7 @@ class ViewModel: ObservableObject {
     @Published var tie = false
     @Published var youWin = false
     @Published var gameOver = false
+    
     func makeChoice() {
           if userChoice != "" {
               computerChoice = choiceArray.randomElement() ?? "icon-scissors"
@@ -32,92 +33,26 @@ class ViewModel: ObservableObject {
               print(computerChoice)
           }
       }
-    
-//    func getScore() {
-
-//        if userChoice == "icon-rock" && computerChoice == "icon-rock" ||  userChoice == "icon-paper" && computerChoice == "icon-paper" || userChoice == "icon-scissors" && computerChoice == "icon-scissors"{
-//            score += 0
-//            tie = true
-//            youWin = false
-//            youLose = false
-//            gameOver = false
-//        }
-//        if userChoice == "icon-rock" && computerChoice == "icon-scissors" && score < 12 {
-//            youWin = true
-//            youLose = false
-//            tie = false
-//            gameOver = false
-//            score += 1
-//        }else if userChoice == "icon-paper" && computerChoice == "icon-rock" && score < 12 {
-//            youWin = true
-//            youLose = false
-//            tie = false
-//            gameOver = false
-//            score += 1
-//        }else if userChoice == "icon-scissors" && computerChoice == "icon-paper" && score < 12 {
-//            youWin = true
-//            youLose = false
-//            tie = false
-//            gameOver = false
-//            score += 1
-//        }
-//        else if  userChoice == "icon-scissors" && computerChoice == "icon-rock" && score > 0{
-//            score -= 1
-//            youLose = true
-//            youWin = false
-//            tie = false
-//            gameOver = false
-//            print("You Lose")
-//        }else if userChoice == "icon-rock" && computerChoice == "icon-paper" && score > 0{
-//            youLose = true
-//            youWin = false
-//            tie = false
-//            gameOver = false
-//            score -= 1
-//            print("You Lose")
-//        } else if userChoice == "icon-paper" && computerChoice == "icon-scissors" && score > 0{
-//            youLose = true
-//            youWin = false
-//            tie = false
-//            gameOver = false
-//            score -= 1
-//            print("You Lose")
-     //   }
-//    else if score == 0 {
-//            youLose = true
-//            youWin = false
-//            gameOver = true
-//            tie = false
-//            score = 12
-//            print("Game Over")
-//        }else {
-//            youWin = false
-//            youLose = false
-//            gameOver = false
-//            tie = false
-//        }
-        
-//      }
     func loseScore() {
         if  userChoice == "icon-scissors" && computerChoice == "icon-rock" && score > 0{
             score -= 1
             youLose = true
-         //   youWin = false
-         //   tie = false
-          //  gameOver = false
+            youWin = false
+            tie = false
+            gameOver = false
             print("You Lose")
         }else if userChoice == "icon-rock" && computerChoice == "icon-paper" && score > 0{
             youLose = true
-           // youWin = false
-           /// tie = false
-           // gameOver = false
+            youWin = false
+            tie = false
+            gameOver = false
             score -= 1
             print("You Lose")
         } else if userChoice == "icon-paper" && computerChoice == "icon-scissors" && score > 0{
             youLose = true
-           // youWin = false
-          //  tie = false
-           // gameOver = false
+            youWin = false
+            tie = false
+            gameOver = false
             score -= 1
             print("You Lose")
         }else if score == 0 {
@@ -127,12 +62,13 @@ class ViewModel: ObservableObject {
             tie = false
             score = 12
             print("Game Over")
-        }else {
-            youWin = false
-            youLose = false
-            gameOver = false
-            tie = false
         }
+//        else {
+//            youWin = false
+//            youLose = false
+//            gameOver = false
+//            tie = false
+//        }
     }
     func winScore() {
         if userChoice == "icon-rock" && computerChoice == "icon-scissors" && score < 12 {
@@ -141,18 +77,22 @@ class ViewModel: ObservableObject {
             tie = false
             gameOver = false
             score += 1
+            print("won")
         }else if userChoice == "icon-paper" && computerChoice == "icon-rock" && score < 12 {
             youWin = true
             youLose = false
             tie = false
             gameOver = false
             score += 1
+            print("won")
         }else if userChoice == "icon-scissors" && computerChoice == "icon-paper" && score < 12 {
             youWin = true
             youLose = false
             tie = false
             gameOver = false
             score += 1
+            print("won")
+            
         }
     }
     func tieScore() {
@@ -162,6 +102,7 @@ class ViewModel: ObservableObject {
             youWin = false
             youLose = false
           ///  gameOver = false
+            print("tie")
         }
     }
 }

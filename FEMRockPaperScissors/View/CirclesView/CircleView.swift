@@ -25,7 +25,6 @@ var body: some View {
                     Button{
                         vm.userChoice = imageName
                         vm.makeChoice()
-                       // vm.getScore()
                         vm.isPresented2 = true
                         vm.loseScore()
                         vm.winScore()

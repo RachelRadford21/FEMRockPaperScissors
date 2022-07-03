@@ -13,6 +13,8 @@ struct RulesSheetView: View {
             Color.background2.ignoresSafeArea()
             ScrollView{
             Text("""
+                
+                
                     RULES:
                 
                     Player chooses first.
@@ -21,9 +23,11 @@ struct RulesSheetView: View {
                     If I win, you lose 1 point.
                     If it is a tie, nobody gets a point
                 
-                    - Paper beats Rock
                     - Rock beats Scissors
+                    - Paper beats Rock
                     - Scissors beats Paper
+                
+                    Game over when score is 0!
                 
                     Good Luck!!
 

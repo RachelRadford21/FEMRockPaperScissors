@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB480A382872456900F90B49 /* TieLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB480A372872456900F90B49 /* TieLabelView.swift */; };
+		AB480A3A287245D300F90B49 /* WinLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB480A39287245D300F90B49 /* WinLabel.swift */; };
+		AB480A3C2872466800F90B49 /* LoseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB480A3B2872466800F90B49 /* LoseLabel.swift */; };
 		AB4899DA2867CF5400104367 /* RulesSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB4899D92867CF5400104367 /* RulesSheetView.swift */; };
 		AB81B1392867B6EA00ECD84B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81B1382867B6EA00ECD84B /* MainView.swift */; };
 		AB81B13B2867B74400ECD84B /* ViewRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB81B13A2867B74400ECD84B /* ViewRouter.swift */; };
@@ -38,6 +41,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB480A372872456900F90B49 /* TieLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TieLabelView.swift; sourceTree = "<group>"; };
+		AB480A39287245D300F90B49 /* WinLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinLabel.swift; sourceTree = "<group>"; };
+		AB480A3B2872466800F90B49 /* LoseLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoseLabel.swift; sourceTree = "<group>"; };
 		AB4899D92867CF5400104367 /* RulesSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesSheetView.swift; sourceTree = "<group>"; };
 		AB81B1382867B6EA00ECD84B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		AB81B13A2867B74400ECD84B /* ViewRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewRouter.swift; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 		ABA2BFF72870F24400EEF0E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AB81B1382867B6EA00ECD84B /* MainView.swift */,
 				ABA2BFF82870F26E00EEF0E1 /* HeaderView */,
 				ABA2BFF92870F29600EEF0E1 /* CirclesView */,
 				ABA2BFFA2870F2DA00EEF0E1 /* RulesView */,
@@ -116,8 +123,6 @@
 			children = (
 				ABA2BFED2870D53300EEF0E1 /* ThreeCirclesView.swift */,
 				ABC2C6C82867752F00BA5A79 /* CircleView.swift */,
-				ABA2BFF32870EB5500EEF0E1 /* YouPickedView.swift */,
-				ABA2BFF52870EC5200EEF0E1 /* HousePickedView.swift */,
 				ABA2C003287228AA00EEF0E1 /* SheetPage */,
 			);
 			path = CirclesView;
@@ -139,7 +144,12 @@
 				ABA2BFFD287222E700EEF0E1 /* YouWinView.swift */,
 				ABA2BFFF2872249300EEF0E1 /* CompWinsView.swift */,
 				ABA2C0012872264F00EEF0E1 /* TieView.swift */,
+				ABA2BFF32870EB5500EEF0E1 /* YouPickedView.swift */,
+				ABA2BFF52870EC5200EEF0E1 /* HousePickedView.swift */,
 				ABA2BFFB2870F41200EEF0E1 /* SheetButtonView.swift */,
+				AB480A372872456900F90B49 /* TieLabelView.swift */,
+				AB480A39287245D300F90B49 /* WinLabel.swift */,
+				AB480A3B2872466800F90B49 /* LoseLabel.swift */,
 			);
 			path = SheetPage;
 			sourceTree = "<group>";
@@ -165,16 +175,15 @@
 			children = (
 				ABC2C6C72867691B00BA5A79 /* Info.plist */,
 				ABC2C6AE2867687000BA5A79 /* FEMRockPaperScissorsApp.swift */,
+				AB81B13A2867B74400ECD84B /* ViewRouter.swift */,
 				ABC2C6B02867687000BA5A79 /* ContentView.swift */,
-				AB81B1382867B6EA00ECD84B /* MainView.swift */,
+				ABC8AD16286DE963003FC3B6 /* ViewModel.swift */,
 				ABA2BFF72870F24400EEF0E1 /* View */,
 				ABC2C6B22867687000BA5A79 /* Assets.xcassets */,
 				AB81B13C2867B76700ECD84B /* Fonts */,
 				ABC2C6C6286768F200BA5A79 /* Images */,
 				ABC2C6B42867687000BA5A79 /* Preview Content */,
 				ABC2C6BC2867688300BA5A79 /* Extensions.swift */,
-				ABC8AD16286DE963003FC3B6 /* ViewModel.swift */,
-				AB81B13A2867B74400ECD84B /* ViewRouter.swift */,
 			);
 			path = FEMRockPaperScissors;
 			sourceTree = "<group>";
@@ -273,9 +282,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB480A3C2872466800F90B49 /* LoseLabel.swift in Sources */,
 				ABC8AD17286DE963003FC3B6 /* ViewModel.swift in Sources */,
 				ABC2C6CB2867A3EE00BA5A79 /* RulesButtonView.swift in Sources */,
 				ABA2C0002872249300EEF0E1 /* CompWinsView.swift in Sources */,
+				AB480A382872456900F90B49 /* TieLabelView.swift in Sources */,
 				ABA2BFEA286F47AF00EEF0E1 /* RPSTitleView.swift in Sources */,
 				ABA2BFFE287222E700EEF0E1 /* YouWinView.swift in Sources */,
 				ABA2C0022872264F00EEF0E1 /* TieView.swift in Sources */,
@@ -283,6 +294,7 @@
 				AB81B1392867B6EA00ECD84B /* MainView.swift in Sources */,
 				ABC2C6C92867752F00BA5A79 /* CircleView.swift in Sources */,
 				ABA2BFEE2870D53300EEF0E1 /* ThreeCirclesView.swift in Sources */,
+				AB480A3A287245D300F90B49 /* WinLabel.swift in Sources */,
 				ABC2C6B12867687000BA5A79 /* ContentView.swift in Sources */,
 				ABC2C6BD2867688300BA5A79 /* Extensions.swift in Sources */,
 				ABA2BFF22870E9AE00EEF0E1 /* CircleSheetView.swift in Sources */,

@@ -22,8 +22,9 @@ struct MainView: View {
                    
                         ScoreView()
                              .padding(.horizontal)
+                        Spacer()
                         ThreeCirclesView()
-                           
+                        Spacer()
                                 
                         RulesButtonView()
                         Spacer()

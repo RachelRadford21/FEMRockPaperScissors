@@ -11,11 +11,13 @@ struct ThreeCirclesView: View {
     @EnvironmentObject var vm: ViewModel
     var body: some View {
         
-        VStack{
-            HStack {
+        VStack {
+            HStack(spacing: 15) {
+                Spacer()
                 CircleView(color1: Color.paper1, color2: Color.paper2, imageName: "icon-paper")
+                Spacer()
                 CircleView(color1: Color.scissors1, color2: Color.scissors2, imageName: "icon-scissors")
-    
+                Spacer()
             }
             VStack {
                 CircleView(color1: Color.rock1, color2: Color.rock2, imageName: "icon-rock")

@@ -14,7 +14,7 @@ struct YouPickedView: View {
             .foregroundColor(Color.white)
             .font(.custom("barlow", size: 20))
             .padding(.top, 200)
-            .padding(.leading, -170)
+            .padding(.leading, -140)
             .frame(alignment: .bottom)
     }
 }
