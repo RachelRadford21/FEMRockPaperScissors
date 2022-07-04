@@ -10,3 +10,5 @@ I'm happy to receive it.
 
 The original design can be found at:
 https://www.frontendmentor.io/challenges/rock-paper-scissors-game-pTgwgvgH
+
+#Swift#SwiftUI
